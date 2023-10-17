@@ -36,7 +36,7 @@ TARGET_SCREEN_WIDTH := 1440
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-voltage
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
@@ -190,10 +190,6 @@ PRODUCT_PACKAGES += \
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:system/etc/permissions/privapp-permissions-hotword.xml
-
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
